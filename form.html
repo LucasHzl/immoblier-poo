@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Beaux Biens</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo du site" class="logo">
+        <h1 class="title">BEAUX BIENS</h1>
+        <nav>
+            <a href="./index.html">Accueil</a>
+            <a href="./form.html">Vendre</a>
+        </nav>
+    </header>
+    <section class="filters">
+        <div class="banner"></div>
+    </section>
+    <section class="titleContent">
+        <h2 class="adTitle">Un bien à vendre ? C'est simple !</h2>
+        <div class="separation"></div>
+    </section>
+    <section class="contentForm">
+        <form>
+
+            
+            <div class="adFormTitle">
+                <label for="adFormTitle">Titre de l'annonce</label>
+                <input type="text" name="adFormTitle" id="adFormTitleInput" required>
+            </div>
+
+
+            <div class="adFormType">
+                <label for="adFormType">Type de biens</label>
+                <select name="adFormType" id="selectType" required>
+                    <option value="noSelection" disabled selected>Sélectionner le type de biens</option>
+                    <option value="house">Maison</option>
+                    <option value="apartment">Appartement</option>
+                    <option value="ground">Terrain</option>
+                </select>
+            </div>
+
+
+            <div class="adFormLocation" id="adFormLocation">
+                <label for="adFormLocation">Localité</label>
+                <input type="text" name="adFormLocation" id="adFormLocationInput" required>
+            </div>
+
+
+            <div class="adFormSurface" id="adFormSurface">
+                <label for="adFormSurface">Surface</label>
+                <input type="number" name="adFormSurface" id="adFormSurfaceInput" required>
+            </div>
+
+            <div class="adFormDesc" id="adFormDesc">
+                <label for="adFormDesc">Description</label>
+                <input type="textarea" name="adFormDesc" id="adFormDescInput" required>
+            </div>
+
+
+            <div class="adFormPrice" id="adFormPrice">
+                <label for="adFormPrice">Prix</label>
+                <input type="number" name="adFormPrice" id="adFormPriceInput" required>
+            </div>
+
+
+            <div class="adFormPiece" id="adFormPiece">
+                <label for="adFormPiece">Nb. de pièces</label>
+                <input type="number" name="adFormPiece" id="adFormPieceInput" required>
+            </div>
+
+
+            <div class="adFormfloor" id="adFormFloor">
+                <label for="adFormfloor">Étage</label>
+                <input type="number" name="adFormfloor" id="adFormFloorInput" required>
+            </div>
+
+            <div class="adFormBox" id="adFormBox">
+                <label for="adFormBox">Garage</label>
+                <select name="adFormBox" id="selectBox" required>
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+
+            <div class="adFormParking" id="adFormParking">
+                <label for="adFormParking">Parking</label>
+                <select name="adFormParking" id="selectParking" required>
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+
+            <div class="adFormElevator" id="adFormElevator">
+                <label for="adFormElevator">Ascenseur</label>
+                <select name="adFormElevator" id="selectElevator" required>
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+
+            <div class="adFormBuildable" id="adFormBuildable">
+                <label for="adFormBuildable">Constructible</label>
+                <select name="adFormBuildable" id="selectBuildable" required>
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+
+            <div class="adFormGarden" id="adFormGarden">
+                <label for="adFormGarden">Jardin</label>
+                <select name="adFormGarden" id="selectGarden" required>
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+
+            <div class="adFormImg" id="adFormImg">
+                <label for="adFormImg">Photo</label>
+                <input type="file" name="adFormImg" id="inputImg" required>
+            </input>
+            </div>
+            
+            
+        </form>
+        <button class="submitAd" id="submitAd">Déposer mon annonce</button>
+    </section>
+    <footer>
+        <nav>
+            <a href="#" class="navFooter">À propos</a>
+            <a href="#" class="navFooter">Nous contactez</a>
+            <a href="#" class="navFooter">Nous suivre</a>
+        </nav>
+    </footer>
+    <script src="./form.js" type="module"></script>
+</body>
+</html>

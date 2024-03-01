@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Beaux Biens</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo du site" class="logo">
+        <h1 class="title">BEAUX BIENS</h1>
+        <nav>
+            <a href="./index.html">Accueil</a>
+            <a href="./form.html">Vendre</a>
+        </nav>
+    </header>
+    <section class="filters">
+        <div class="banner">
+            <div class="containerFilters">
+                <label>Filtres</label>
+                <select id="typeFilter">
+                    <option value="all" selected>Tout</option>
+                    <option value="house">Maison</option>
+                    <option value="apartment">Appartement</option>
+                    <option value="ground">Terrain</option>
+                </select>
+                <button class="submitFilter" id="submitFilter">Filtrer</button>
+            </div>
+        </div>
+    </section>
+    <section class="titleContent">
+        <h2 class="adTitle">Toutes nos annonces immobilières</h2>
+        <div class="separation"></div>
+    </section>
+    <section class="content">
+        <div class="metaAds" id="metaAds"></div>
+    </section>
+    <footer>
+        <nav>
+            <a href="#" class="navFooter">À propos</a>
+            <a href="#" class="navFooter">Nous contactez</a>
+            <a href="#" class="navFooter">Nous suivre</a>
+        </nav>
+    </footer>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
